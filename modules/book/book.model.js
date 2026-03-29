@@ -1,37 +1,37 @@
 import mongoose from "mongoose";
 
 const bookSchema = new mongoose.Schema(
-  {
-    title: {
-      type: String,
-      required: true,
-      trim: true,
-    },
+    {
+        title: {
+            type: String,
+            required: true,
+            trim: true,
+        },
 
-    author: {
-      type: String,
-      required: true,
-      trim: true,
-    },
+        author: {
+            type: String,
+            required: true,
+            trim: true,
+        },
 
-    status: {
-      type: String,
-      enum: ["available", "borrowed"],
-      default: "available",
-    },
+        status: {
+            type: String,
+            enum: ["available", "borrowed"],
+            default: "available",
+        },
 
-    publishedYear: {
-      type: Number,
-      required: true,
-    },
+        publishedYear: {
+            type: Number,
+            required: true,
+        },
 
-    borrowedBy: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "User",
-      default: null,
+        borrowedBy: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: "User",
+            default: null,
+        },
     },
-  },
-  { timestamps: true }
+    { timestamps: true }
 );
 
 export default mongoose.model("Book", bookSchema);
