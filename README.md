@@ -162,7 +162,7 @@ POST `/auth/register`
 
 #### Login
 
-POST `/auth/login`
+POST `api/auth/login`
 
 ```
 {
@@ -185,7 +185,7 @@ Response:
 
 #### Get All Books
 
-GET `/books`
+GET `api/books`
 
 Requires authentication
 
@@ -193,7 +193,7 @@ Requires authentication
 
 #### Add Book (Admin Only)
 
-POST `/books`
+POST `api/books`
 
 ```
 {
@@ -207,7 +207,7 @@ POST `/books`
 
 #### Update Book
 
-PUT `/books/:id`
+PUT `api/books/:id`
 
 Admin only
 
@@ -215,7 +215,7 @@ Admin only
 
 #### Delete Book
 
-DELETE `/books/:id`
+DELETE `api/books/:id`
 
 Admin only
 
@@ -223,7 +223,7 @@ Admin only
 
 #### Borrow / Return Book
 
-PATCH `/books/:id/status`
+PATCH `api/books/:id/status`
 
 Automatically toggles:
 
@@ -275,7 +275,7 @@ Use:
 Example:
 
 ```
-GET /books
+GET api/books
 Authorization: Bearer <token>
 ```
 
