@@ -17,21 +17,21 @@ router.get("/", authenticate, fetchBooks);
 router.post(
     "/",
     authenticate,
-    authorize(["admin"]),
+    authorize(["ADMIN"]),
     addBook
 );
 
 router.put(
     "/:id",
     authenticate,
-    authorize(["admin"]),
+    authorize(["ADMIN"]),
     editBook
 );
 
 router.delete(
     "/:id",
     authenticate,
-    authorize(["admin"]),
+    authorize(["ADMIN"]),
     removeBook
 );
 
