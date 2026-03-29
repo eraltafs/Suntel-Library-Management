@@ -1,0 +1,20 @@
+{
+  "name": "suntel-library-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eraltafs/Suntel-Library-Management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eraltafs/Suntel-Library-Management/issues"
+  },
+  "homepage": "https://github.com/eraltafs/Suntel-Library-Management#readme"
+}
